@@ -1,24 +1,37 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Pill Planner</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
 </head>
 <body>
-    <header>
-        <img src="assets/logo.png" alt="Logo Pill Planner" class="logo">
-        <h1>À propos de Pill Planner</h1>
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo-link">
+                <img src="assets/logo.png" alt="Logo Pill Planner" class="logo" />
+                <span class="site-title">Pill Planner</span>
+            </a>
+            <nav class="main-nav" role="navigation" aria-label="Navigation principale">
+                <ul class="nav-list">
+                    <li><a href="index.html" aria-current="page">Accueil</a></li>
+                    <li><a href="support.html">Support</a></li>
+                    <li><a href="confidentiality.html">Confidentialité</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main>
-        <section class="intro">
+    <main class="container main-content">
+        <section class="intro-section">
+            <h1>À propos de Pill Planner</h1>
             <p>Pill Planner est une application conçue pour faciliter la gestion de vos traitements chroniques, de leur stock et des ordonnances.</p>
             <p>Développée avec amour sur mon temps libre, elle vise à aider les personnes souffrant de maladies chroniques. En espérant qu'elle puisse vous aider aussi ❤️.</p>
         </section>
-        <section>
-            <h2>🚀 Prochaines fonctionnalités</h2>
-            <ul>
+        <section class="features-section" aria-labelledby="features-title">
+            <h2 id="features-title">🚀 Prochaines fonctionnalités</h2>
+            <ul class="features-list">
                 <li>📦 Affichage du stock en nombre de jours restant</li>
                 <li>📄 Numérisation des ordonnances en pièce jointe</li>
                 <li>🔔 Notifications en cas de stock bas</li>
@@ -27,9 +40,13 @@
             </ul>
         </section>
     </main>
-    <footer>
-        <p>© 2025 IndHealth</p>
-        <p><a href="support.html">Contact</a> | <a href="confidentiality.html">Confidentialité</a></p>
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <p>© 2025 IndHealth</p>
+            <p>
+                <a href="support.html">Contact</a> | <a href="confidentiality.html">Confidentialité</a>
+            </p>
+        </div>
     </footer>
 </body>
 </html>
